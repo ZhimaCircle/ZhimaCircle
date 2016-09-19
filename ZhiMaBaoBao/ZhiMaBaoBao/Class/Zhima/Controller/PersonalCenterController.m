@@ -12,7 +12,9 @@
 
 @end
 
-@implementation PersonalCenterController
+@implementation PersonalCenterController {
+    UITableView *_tableView;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
