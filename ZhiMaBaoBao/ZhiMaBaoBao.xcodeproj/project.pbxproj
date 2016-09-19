@@ -25,6 +25,8 @@
 		31B7C71F1D8E96A100F1883A /* ConversationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B7C70E1D8E96A100F1883A /* ConversationController.m */; };
 		31B7C7201D8E96A100F1883A /* TimeLineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B7C7141D8E96A100F1883A /* TimeLineController.m */; };
 		31B7C7211D8E96A100F1883A /* FriendsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B7C71A1D8E96A100F1883A /* FriendsController.m */; };
+		31B7C72A1D8F845000F1883A /* LogResBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B7C7291D8F845000F1883A /* LogResBaseController.m */; };
+		31B7C7431D8F8D8200F1883A /* HttpTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B7C7421D8F8D8200F1883A /* HttpTool.m */; };
 		9D4903A7551EC331016D9D3A /* Pods_ZhiMaBaoBao.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7AF1AD7B94550139D0811527 /* Pods_ZhiMaBaoBao.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +83,12 @@
 		31B7C7141D8E96A100F1883A /* TimeLineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeLineController.m; sourceTree = "<group>"; };
 		31B7C7191D8E96A100F1883A /* FriendsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsController.h; sourceTree = "<group>"; };
 		31B7C71A1D8E96A100F1883A /* FriendsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsController.m; sourceTree = "<group>"; };
+		31B7C7241D8F7DB100F1883A /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		31B7C7261D8F816A00F1883A /* Zhimabaobao.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Zhimabaobao.pch; sourceTree = "<group>"; };
+		31B7C7281D8F845000F1883A /* LogResBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogResBaseController.h; sourceTree = "<group>"; };
+		31B7C7291D8F845000F1883A /* LogResBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogResBaseController.m; sourceTree = "<group>"; };
+		31B7C7411D8F8D8200F1883A /* HttpTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpTool.h; sourceTree = "<group>"; };
+		31B7C7421D8F8D8200F1883A /* HttpTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpTool.m; sourceTree = "<group>"; };
 		7AF1AD7B94550139D0811527 /* Pods_ZhiMaBaoBao.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZhiMaBaoBao.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED5B4B06468C0E404D88A32A /* Pods-ZhiMaBaoBao.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiMaBaoBao.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiMaBaoBao/Pods-ZhiMaBaoBao.debug.xcconfig"; sourceTree = "<group>"; };
 		F6223DBCE43169F5A4CF9B6D /* Pods-ZhiMaBaoBao.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZhiMaBaoBao.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZhiMaBaoBao/Pods-ZhiMaBaoBao.release.xcconfig"; sourceTree = "<group>"; };
@@ -198,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				310B83241D8E7B0100A0F408 /* main.m */,
+				31B7C7261D8F816A00F1883A /* Zhimabaobao.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -223,6 +232,12 @@
 		31B7C6CB1D8E89D700F1883A /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				31B7C7271D8F82CE00F1883A /* LoginRegiste */,
+				31B7C6FF1D8E96A100F1883A /* Zhima */,
+				31B7C7051D8E96A100F1883A /* ZhimaCall */,
+				31B7C70B1D8E96A100F1883A /* ZhimaChat */,
+				31B7C7111D8E96A100F1883A /* ZhimaCircle */,
+				31B7C7171D8E96A100F1883A /* ZhimaFriend */,
 				31B7C6FF1D8E96A100F1883A /* Zhima(芝麻) */,
 				31B7C7051D8E96A100F1883A /* ZhimaCall(芝麻通) */,
 				31B7C70B1D8E96A100F1883A /* ZhimaChat(芝麻聊) */,
@@ -414,6 +429,8 @@
 		31B7C7221D8E96BD00F1883A /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
+				31B7C7281D8F845000F1883A /* LogResBaseController.h */,
+				31B7C7291D8F845000F1883A /* LogResBaseController.m */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -421,8 +438,18 @@
 		31B7C7231D8E96BD00F1883A /* Tools */ = {
 			isa = PBXGroup;
 			children = (
+				31B7C7241D8F7DB100F1883A /* Constant.h */,
+				31B7C7411D8F8D8200F1883A /* HttpTool.h */,
+				31B7C7421D8F8D8200F1883A /* HttpTool.m */,
 			);
 			path = Tools;
+			sourceTree = "<group>";
+		};
+		31B7C7271D8F82CE00F1883A /* LoginRegiste */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = LoginRegiste;
 			sourceTree = "<group>";
 		};
 		6666479B9953F1FE730C9125 /* Pods */ = {
@@ -624,7 +651,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				31B7C72A1D8F845000F1883A /* LogResBaseController.m in Sources */,
 				31B7C71E1D8E96A100F1883A /* CallViewController.m in Sources */,
+				31B7C7431D8F8D8200F1883A /* HttpTool.m in Sources */,
 				04EA79721D8F8F49005E5425 /* UIColor+My.m in Sources */,
 				04EA79681D8F861D005E5425 /* KXPersonalCenterCell.m in Sources */,
 				31B7C7201D8E96A100F1883A /* TimeLineController.m in Sources */,
@@ -779,6 +808,8 @@
 			baseConfigurationReference = ED5B4B06468C0E404D88A32A /* Pods-ZhiMaBaoBao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/gang/Desktop/ZhimaCircle/ZhiMaBaoBao/ZhiMaBaoBao/Zhimabaobao.pch;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = ZhiMaBaoBao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -794,6 +825,8 @@
 			baseConfigurationReference = F6223DBCE43169F5A4CF9B6D /* Pods-ZhiMaBaoBao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/gang/Desktop/ZhimaCircle/ZhiMaBaoBao/ZhiMaBaoBao/Zhimabaobao.pch;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = ZhiMaBaoBao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
