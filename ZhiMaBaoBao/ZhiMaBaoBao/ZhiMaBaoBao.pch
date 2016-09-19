@@ -9,6 +9,9 @@
 #ifndef Zhimabaobao_pch
 #define Zhimabaobao_pch
 
+#ifdef __OBJC__ 
 #import "Constant.h"
+
+#endif
 
 #endif /* Zhimabaobao_pch */

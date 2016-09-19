@@ -86,9 +86,7 @@
     [HttpTool POST:@"/moblie/user_login.do" params:@{@"phone":phone,@"password":password,@"version":@(2.0),@"appSystem":@"ios"} success:^(ResponseData *json) {
         
         success(json);
-        
-        
-        
+                
     } failure:^(ErrorData *error) {
 //        failure(error);
         

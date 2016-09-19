@@ -80,11 +80,11 @@
             }
             
             //状态码不为0
-            if (data.code != 0) {
-                ErrorData *error = [ErrorData mj_objectWithKeyValues:responseObject];
-                FailureBlock(error);
-                return ;
-            }
+//            if (data.code != 0) {
+//                ErrorData *error = [ErrorData mj_objectWithKeyValues:responseObject];
+//                FailureBlock(error);
+//                return ;
+//            }
             
             //成功访问
             SuccessfulBlock(data);
