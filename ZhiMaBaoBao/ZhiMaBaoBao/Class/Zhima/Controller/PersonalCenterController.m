@@ -7,10 +7,8 @@
 //  芝麻（个人中心）
 
 #import "PersonalCenterController.h"
-
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define ScreenHeight [UIScreen mainScreen].bounds.size.height
-
+#import "KXPersonalCenterCell.h"
+#import "KXSettingController.h"
 
 #define PersonalCellHeight 45
 #define PersonalCenterCellReusedId @"PersonalCenterCellReusedId"
@@ -41,6 +39,7 @@
     _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     
     [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:PersonalCenterCellReusedId];
+    [_tableView registerClass:[KXPersonalCenterCell class] forCellReuseIdentifier:@"PersonalCenterCell"];
     
 }
 
@@ -56,19 +55,29 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:PersonalCenterCellReusedId forIndexPath:indexPath];
+    
+    if (indexPath.section == 0) {
+        KXPersonalCenterCell *cell = [tableView dequeueReusableCellWithIdentifier:@"PersonalCenterCell" forIndexPath:indexPath];
+        cell.name = @"kit";
+        cell.imageName = @"userIcon";
+        cell.subName = @"我就是我";
+        return cell;
+    }
     
     if (indexPath.section == 1) {
-        cell.textLabel.text = self.titleArray[indexPath.row];
-        cell.imageView.image = [UIImage imageNamed:self.imageArray[indexPath.row]];
-        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+        UITableViewCell *Normalcell = [tableView dequeueReusableCellWithIdentifier:PersonalCenterCellReusedId forIndexPath:indexPath];
+        Normalcell.textLabel.text = self.titleArray[indexPath.row];
+        Normalcell.imageView.image = [UIImage imageNamed:self.imageArray[indexPath.row]];
+        Normalcell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
         
         UIView *bottomLineView = [[UIView alloc] initWithFrame:CGRectMake(20, PersonalCellHeight - 0.5, ScreenWidth - 10, 0.5)];
-        bottomLineView.backgroundColor = [UIColor lightGrayColor];
-        [cell addSubview:bottomLineView];
-        
+        bottomLineView.backgroundColor = [UIColor colorFormHexRGB:@"e1e1e1"];
+        [Normalcell addSubview:bottomLineView];
+        return Normalcell;
     }
-    return cell;
+    
+    
+    return nil;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -89,6 +98,24 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    if (indexPath.section == 0) {
+        //个人信息
+    }
+    
+    if (indexPath.section == 1 && indexPath.row == 0) {
+        //我的相册
+    } else if (indexPath.section == 1 && indexPath.row == 1) {
+        //我的账户
+    } else if (indexPath.section == 1 && indexPath.row == 2) {
+        //意见反馈
+    } else if (indexPath.section == 1 && indexPath.row == 3) {
+        //设置中心
+        KXSettingController *setting = [[KXSettingController alloc] init];
+        setting.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:setting animated:YES];
+    }
+    
 }
 
 

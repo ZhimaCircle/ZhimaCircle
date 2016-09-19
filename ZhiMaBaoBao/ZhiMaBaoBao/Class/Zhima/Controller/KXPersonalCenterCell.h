@@ -10,4 +10,12 @@
 
 @interface KXPersonalCenterCell : UITableViewCell
 
+@property (nonatomic, copy) NSString *imageName;
+@property (nonatomic, copy) NSString *name;
+@property (nonatomic, copy) NSString *subName;
+/**
+ *  M是男性 、 F是女性
+ */
+@property (nonatomic, copy) NSString *Sex;
+
 @end

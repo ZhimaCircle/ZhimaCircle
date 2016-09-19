@@ -12,6 +12,14 @@
 		04EA79701D8F8F49005E5425 /* NSString+FontSize.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA796B1D8F8F49005E5425 /* NSString+FontSize.m */; };
 		04EA79711D8F8F49005E5425 /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA796D1D8F8F49005E5425 /* NSString+MD5.m */; };
 		04EA79721D8F8F49005E5425 /* UIColor+My.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA796F1D8F8F49005E5425 /* UIColor+My.m */; };
+		04EA79761D8FB95B005E5425 /* KXSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79751D8FB95B005E5425 /* KXSettingController.m */; };
+		04EA797A1D8FBA0C005E5425 /* KXWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79791D8FBA0C005E5425 /* KXWebViewController.m */; };
+		04EA798A1D8FBCF3005E5425 /* LGBlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA797E1D8FBCF3005E5425 /* LGBlackListViewController.m */; };
+		04EA798B1D8FBCF3005E5425 /* KXBlackListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79811D8FBCF3005E5425 /* KXBlackListModel.m */; };
+		04EA798C1D8FBCF3005E5425 /* KXBlackListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79841D8FBCF3005E5425 /* KXBlackListCell.m */; };
+		04EA798D1D8FBCF3005E5425 /* LGPhoneUpTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79871D8FBCF3005E5425 /* LGPhoneUpTableViewCell.m */; };
+		04EA798E1D8FBCF3005E5425 /* LGResetPwdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79891D8FBCF3005E5425 /* LGResetPwdViewController.m */; };
+		04EA79911D8FBDF4005E5425 /* UIView+x.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79901D8FBDF4005E5425 /* UIView+x.m */; };
 		310B83251D8E7B0100A0F408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B83241D8E7B0100A0F408 /* main.m */; };
 		310B83281D8E7B0100A0F408 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B83271D8E7B0100A0F408 /* AppDelegate.m */; };
 		310B832E1D8E7B0100A0F408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310B832C1D8E7B0100A0F408 /* Main.storyboard */; };
@@ -57,6 +65,22 @@
 		04EA796D1D8F8F49005E5425 /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
 		04EA796E1D8F8F49005E5425 /* UIColor+My.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+My.h"; sourceTree = "<group>"; };
 		04EA796F1D8F8F49005E5425 /* UIColor+My.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+My.m"; sourceTree = "<group>"; };
+		04EA79741D8FB95B005E5425 /* KXSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXSettingController.h; sourceTree = "<group>"; };
+		04EA79751D8FB95B005E5425 /* KXSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXSettingController.m; sourceTree = "<group>"; };
+		04EA79781D8FBA0C005E5425 /* KXWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXWebViewController.h; sourceTree = "<group>"; };
+		04EA79791D8FBA0C005E5425 /* KXWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXWebViewController.m; sourceTree = "<group>"; };
+		04EA797D1D8FBCF3005E5425 /* LGBlackListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGBlackListViewController.h; sourceTree = "<group>"; };
+		04EA797E1D8FBCF3005E5425 /* LGBlackListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGBlackListViewController.m; sourceTree = "<group>"; };
+		04EA79801D8FBCF3005E5425 /* KXBlackListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXBlackListModel.h; sourceTree = "<group>"; };
+		04EA79811D8FBCF3005E5425 /* KXBlackListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXBlackListModel.m; sourceTree = "<group>"; };
+		04EA79831D8FBCF3005E5425 /* KXBlackListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KXBlackListCell.h; sourceTree = "<group>"; };
+		04EA79841D8FBCF3005E5425 /* KXBlackListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXBlackListCell.m; sourceTree = "<group>"; };
+		04EA79861D8FBCF3005E5425 /* LGPhoneUpTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGPhoneUpTableViewCell.h; sourceTree = "<group>"; };
+		04EA79871D8FBCF3005E5425 /* LGPhoneUpTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGPhoneUpTableViewCell.m; sourceTree = "<group>"; };
+		04EA79881D8FBCF3005E5425 /* LGResetPwdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGResetPwdViewController.h; sourceTree = "<group>"; };
+		04EA79891D8FBCF3005E5425 /* LGResetPwdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGResetPwdViewController.m; sourceTree = "<group>"; };
+		04EA798F1D8FBDF4005E5425 /* UIView+x.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+x.h"; sourceTree = "<group>"; };
+		04EA79901D8FBDF4005E5425 /* UIView+x.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+x.m"; sourceTree = "<group>"; };
 		310B83201D8E7B0100A0F408 /* ZhiMaBaoBao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiMaBaoBao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310B83241D8E7B0100A0F408 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		310B83261D8E7B0100A0F408 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -150,6 +174,8 @@
 		04EA79691D8F8F26005E5425 /* Categray */ = {
 			isa = PBXGroup;
 			children = (
+				04EA798F1D8FBDF4005E5425 /* UIView+x.h */,
+				04EA79901D8FBDF4005E5425 /* UIView+x.m */,
 				04EA796A1D8F8F49005E5425 /* NSString+FontSize.h */,
 				04EA796B1D8F8F49005E5425 /* NSString+FontSize.m */,
 				04EA796C1D8F8F49005E5425 /* NSString+MD5.h */,
@@ -160,6 +186,74 @@
 			name = Categray;
 			path = ZhiMaBaoBao/Categray;
 			sourceTree = SOURCE_ROOT;
+		};
+		04EA79731D8FB93D005E5425 /* Setting(设置) */ = {
+			isa = PBXGroup;
+			children = (
+				04EA79741D8FB95B005E5425 /* KXSettingController.h */,
+				04EA79751D8FB95B005E5425 /* KXSettingController.m */,
+			);
+			name = "Setting(设置)";
+			sourceTree = "<group>";
+		};
+		04EA79771D8FB9F7005E5425 /* ZhiMaWebView */ = {
+			isa = PBXGroup;
+			children = (
+				04EA79781D8FBA0C005E5425 /* KXWebViewController.h */,
+				04EA79791D8FBA0C005E5425 /* KXWebViewController.m */,
+			);
+			name = ZhiMaWebView;
+			sourceTree = "<group>";
+		};
+		04EA797B1D8FBCF3005E5425 /* BlackList(黑名单) */ = {
+			isa = PBXGroup;
+			children = (
+				04EA797C1D8FBCF3005E5425 /* Controller */,
+				04EA797F1D8FBCF3005E5425 /* Model */,
+				04EA79821D8FBCF3005E5425 /* View */,
+			);
+			name = "BlackList(黑名单)";
+			path = BlackList;
+			sourceTree = "<group>";
+		};
+		04EA797C1D8FBCF3005E5425 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04EA797D1D8FBCF3005E5425 /* LGBlackListViewController.h */,
+				04EA797E1D8FBCF3005E5425 /* LGBlackListViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		04EA797F1D8FBCF3005E5425 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				04EA79801D8FBCF3005E5425 /* KXBlackListModel.h */,
+				04EA79811D8FBCF3005E5425 /* KXBlackListModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		04EA79821D8FBCF3005E5425 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04EA79831D8FBCF3005E5425 /* KXBlackListCell.h */,
+				04EA79841D8FBCF3005E5425 /* KXBlackListCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		04EA79851D8FBCF3005E5425 /* ResetPassword(重置密码) */ = {
+			isa = PBXGroup;
+			children = (
+				04EA79861D8FBCF3005E5425 /* LGPhoneUpTableViewCell.h */,
+				04EA79871D8FBCF3005E5425 /* LGPhoneUpTableViewCell.m */,
+				04EA79881D8FBCF3005E5425 /* LGResetPwdViewController.h */,
+				04EA79891D8FBCF3005E5425 /* LGResetPwdViewController.m */,
+			);
+			name = "ResetPassword(重置密码)";
+			path = ResetPassword;
+			sourceTree = "<group>";
 		};
 		310B83171D8E7B0100A0F408 = {
 			isa = PBXGroup;
@@ -233,11 +327,6 @@
 			isa = PBXGroup;
 			children = (
 				31B7C7271D8F82CE00F1883A /* LoginRegiste */,
-				31B7C6FF1D8E96A100F1883A /* Zhima */,
-				31B7C7051D8E96A100F1883A /* ZhimaCall */,
-				31B7C70B1D8E96A100F1883A /* ZhimaChat */,
-				31B7C7111D8E96A100F1883A /* ZhimaCircle */,
-				31B7C7171D8E96A100F1883A /* ZhimaFriend */,
 				31B7C6FF1D8E96A100F1883A /* Zhima(芝麻) */,
 				31B7C7051D8E96A100F1883A /* ZhimaCall(芝麻通) */,
 				31B7C70B1D8E96A100F1883A /* ZhimaChat(芝麻聊) */,
@@ -271,6 +360,10 @@
 		31B7C7001D8E96A100F1883A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04EA797B1D8FBCF3005E5425 /* BlackList(黑名单) */,
+				04EA79851D8FBCF3005E5425 /* ResetPassword(重置密码) */,
+				04EA79771D8FB9F7005E5425 /* ZhiMaWebView */,
+				04EA79731D8FB93D005E5425 /* Setting(设置) */,
 				04EA79631D8F85E8005E5425 /* PersonalCenter */,
 			);
 			path = Controller;
@@ -429,8 +522,8 @@
 		31B7C7221D8E96BD00F1883A /* BaseController */ = {
 			isa = PBXGroup;
 			children = (
-				31B7C7281D8F845000F1883A /* LogResBaseController.h */,
 				31B7C7291D8F845000F1883A /* LogResBaseController.m */,
+				31B7C7281D8F845000F1883A /* LogResBaseController.h */,
 			);
 			path = BaseController;
 			sourceTree = "<group>";
@@ -651,18 +744,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04EA798D1D8FBCF3005E5425 /* LGPhoneUpTableViewCell.m in Sources */,
+				04EA797A1D8FBA0C005E5425 /* KXWebViewController.m in Sources */,
 				31B7C72A1D8F845000F1883A /* LogResBaseController.m in Sources */,
 				31B7C71E1D8E96A100F1883A /* CallViewController.m in Sources */,
+				04EA798C1D8FBCF3005E5425 /* KXBlackListCell.m in Sources */,
+				04EA798A1D8FBCF3005E5425 /* LGBlackListViewController.m in Sources */,
+				04EA798B1D8FBCF3005E5425 /* KXBlackListModel.m in Sources */,
 				31B7C7431D8F8D8200F1883A /* HttpTool.m in Sources */,
 				04EA79721D8F8F49005E5425 /* UIColor+My.m in Sources */,
+				04EA79761D8FB95B005E5425 /* KXSettingController.m in Sources */,
 				04EA79681D8F861D005E5425 /* KXPersonalCenterCell.m in Sources */,
 				31B7C7201D8E96A100F1883A /* TimeLineController.m in Sources */,
+				04EA798E1D8FBCF3005E5425 /* LGResetPwdViewController.m in Sources */,
 				04EA79701D8F8F49005E5425 /* NSString+FontSize.m in Sources */,
 				04EA79711D8F8F49005E5425 /* NSString+MD5.m in Sources */,
 				31B7C6FE1D8E91F000F1883A /* MainViewController.m in Sources */,
 				310B83281D8E7B0100A0F408 /* AppDelegate.m in Sources */,
 				31B7C71D1D8E96A100F1883A /* PersonalCenterController.m in Sources */,
 				31B7C7211D8E96A100F1883A /* FriendsController.m in Sources */,
+				04EA79911D8FBDF4005E5425 /* UIView+x.m in Sources */,
 				31B7C71F1D8E96A100F1883A /* ConversationController.m in Sources */,
 				310B83251D8E7B0100A0F408 /* main.m in Sources */,
 			);
@@ -808,9 +909,9 @@
 			baseConfigurationReference = ED5B4B06468C0E404D88A32A /* Pods-ZhiMaBaoBao.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/gang/Desktop/ZhimaCircle/ZhiMaBaoBao/ZhiMaBaoBao/Zhimabaobao.pch;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZhiMaBaoBao/Zhimabaobao.pch";
 				INFOPLIST_FILE = ZhiMaBaoBao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -825,9 +926,9 @@
 			baseConfigurationReference = F6223DBCE43169F5A4CF9B6D /* Pods-ZhiMaBaoBao.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = /Users/gang/Desktop/ZhimaCircle/ZhiMaBaoBao/ZhiMaBaoBao/Zhimabaobao.pch;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SRCROOT}/ZhiMaBaoBao/Zhimabaobao.pch";
 				INFOPLIST_FILE = ZhiMaBaoBao/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

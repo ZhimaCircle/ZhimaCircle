@@ -10,5 +10,11 @@
 #define Zhimabaobao_pch
 
 #import "Constant.h"
+#import "UIColor+My.h"
+#import "NSString+FontSize.h"
+
+
+#define ScreenWidth [UIScreen mainScreen].bounds.size.width
+#define ScreenHeight [UIScreen mainScreen].bounds.size.height
 
 #endif /* Zhimabaobao_pch */
