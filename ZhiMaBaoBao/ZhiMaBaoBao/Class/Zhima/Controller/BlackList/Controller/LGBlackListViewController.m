@@ -27,8 +27,7 @@
     [super viewDidLoad];
     self.view.backgroundColor = BGCOLOR;
     [self addAllViews];
-//    [self setCustomTitle:@"黑名单"];
-    self.title = @"黑名单";
+    [self setCustomTitle:@"黑名单"];
     self.automaticallyAdjustsScrollViewInsets = NO;
     
 }

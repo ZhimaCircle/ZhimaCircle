@@ -6,9 +6,9 @@
 //  Copyright © 2016年 ikantech. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface KXWebViewController : UIViewController
+@interface KXWebViewController : BaseViewController
 @property (nonatomic, copy) NSString *navTitleName;
 @property (nonatomic, copy) NSString *htmlURL;
 @end

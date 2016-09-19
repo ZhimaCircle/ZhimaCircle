@@ -18,8 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-//    [self setCustomTitle:_navTitleName];
-    self.title = _navTitleName;
+    [self setCustomTitle:_navTitleName];
     self.view.backgroundColor = BGCOLOR;
     
     UIWebView *webView = [[UIWebView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64)];

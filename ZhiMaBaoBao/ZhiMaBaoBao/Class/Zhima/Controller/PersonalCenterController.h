@@ -6,8 +6,8 @@
 //  Copyright © 2016年 liugang. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "BaseViewController.h"
 
-@interface PersonalCenterController : UIViewController
+@interface PersonalCenterController : BaseViewController
 
 @end

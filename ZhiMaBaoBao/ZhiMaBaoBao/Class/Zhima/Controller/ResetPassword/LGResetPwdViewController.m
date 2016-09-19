@@ -32,8 +32,7 @@
     [super viewDidLoad];
     [self addAllViews];
 
-//    [self setCustomTitle:@"重置密码"];
-    self.title = @"重置密码";
+    [self setCustomTitle:@"重置密码"];
     self.tableView.tableFooterView = [[UIView alloc] initWithFrame:CGRectZero];
     
 }

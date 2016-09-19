@@ -7,11 +7,16 @@
 //
 
 #import "KXSettingController.h"
+
+
 #import "KXWebViewController.h" //webView
 #import "LGResetPwdViewController.h"  //重置密码
 #import "LGBlackListViewController.h" //黑名单
+#import "NewMessageSettingController.h" //新消息提醒
+#import "PersonalSettingController.h" //隐私设置
 
 #define KXUserSettingCellReusedID @"KXUserSettingCellReusedID"
+#define cellHeight 45
 
 @interface KXSettingController () <UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UITableView *tableView;
@@ -23,7 +28,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.title = @"设置";
+    [self setCustomTitle:@"设置"];
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStyleGrouped];
     [self.view addSubview:self.tableView];
@@ -53,7 +58,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:KXUserSettingCellReusedID forIndexPath:indexPath];
     NSArray *titleArray = self.dataArray[indexPath.section];
     cell.textLabel.text = titleArray[indexPath.row];
-    cell.textLabel.font = [UIFont systemFontOfSize:14];
+    cell.textLabel.font = [UIFont systemFontOfSize:15];
     if (indexPath.section == 0 && indexPath.row == 5) {
         UILabel *subTileLabel = [[UILabel alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 100, 0, 80, 40)];
         subTileLabel.textAlignment = NSTextAlignmentRight;
@@ -65,7 +70,7 @@
         [cell addSubview:subTileLabel];
     }
     
-    UIView *bottomLineView = [[UIView alloc] initWithFrame:CGRectMake(10, 40 - 0.5, ScreenWidth - 10, 0.5)];
+    UIView *bottomLineView = [[UIView alloc] initWithFrame:CGRectMake(10, cellHeight - 0.5, ScreenWidth - 10, 0.5)];
     bottomLineView.backgroundColor = [UIColor colorFormHexRGB:@"e1e1e1"];
     [cell addSubview:bottomLineView];
     
@@ -73,7 +78,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 40;
+    return cellHeight;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
@@ -133,11 +138,13 @@
         [self.navigationController pushViewController:aboutUs animated:YES];
     } else if (indexPath.section == 0 && indexPath.row == 0) {
         //新消息提醒
-        
+        NewMessageSettingController *message = [[NewMessageSettingController alloc] init];
+        [self.navigationController pushViewController:message animated:YES];
         
     } else if (indexPath.section == 0 && indexPath.row == 1) {
         //隐私设置
-        
+        PersonalSettingController *personalSetting = [[PersonalSettingController alloc] init];
+        [self.navigationController pushViewController:personalSetting animated:YES];
     }
     
     [tableView deselectRowAtIndexPath:indexPath animated:YES];

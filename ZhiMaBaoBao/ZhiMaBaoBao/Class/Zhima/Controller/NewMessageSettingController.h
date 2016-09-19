@@ -1,5 +1,5 @@
 //
-//  KXSettingController.h
+//  NewMessageSettingController.h
 //  ZhiMaBaoBao
 //
 //  Created by mac on 16/9/19.
@@ -8,6 +8,6 @@
 
 #import "BaseViewController.h"
 
-@interface KXSettingController : BaseViewController
+@interface NewMessageSettingController : BaseViewController
 
 @end
