@@ -7,8 +7,11 @@
 //  芝麻（个人中心）
 
 #import "PersonalCenterController.h"
-#import "KXPersonalCenterCell.h"
-#import "KXSettingController.h"
+#import "KXPersonalCenterCell.h" 
+
+
+#import "KXSettingController.h"  //个人设置
+#import "LGFeedBackViewController.h" //意见反馈
 
 #define PersonalCellHeight 45
 #define PersonalCenterCellReusedId @"PersonalCenterCellReusedId"
@@ -109,6 +112,9 @@
         //我的账户
     } else if (indexPath.section == 1 && indexPath.row == 2) {
         //意见反馈
+        LGFeedBackViewController *feedBack = [[LGFeedBackViewController alloc] init];
+        feedBack.hidesBottomBarWhenPushed = YES;
+        [self.navigationController pushViewController:feedBack animated:YES];
     } else if (indexPath.section == 1 && indexPath.row == 3) {
         //设置中心
         KXSettingController *setting = [[KXSettingController alloc] init];

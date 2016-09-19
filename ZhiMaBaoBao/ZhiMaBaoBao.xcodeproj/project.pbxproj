@@ -24,6 +24,7 @@
 		04EA799D1D8FD56C005E5425 /* NewMessageSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA799C1D8FD56C005E5425 /* NewMessageSettingController.m */; };
 		04EA79A11D8FD589005E5425 /* KXSettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79A01D8FD589005E5425 /* KXSettingCell.m */; };
 		04EA79A51D8FDAF9005E5425 /* PersonalSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79A41D8FDAF9005E5425 /* PersonalSettingController.m */; };
+		04EA79B11D90154F005E5425 /* LGFeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 04EA79B01D90154F005E5425 /* LGFeedBackViewController.m */; };
 		310B83251D8E7B0100A0F408 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B83241D8E7B0100A0F408 /* main.m */; };
 		310B83281D8E7B0100A0F408 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 310B83271D8E7B0100A0F408 /* AppDelegate.m */; };
 		310B832E1D8E7B0100A0F408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310B832C1D8E7B0100A0F408 /* Main.storyboard */; };
@@ -93,6 +94,8 @@
 		04EA79A01D8FD589005E5425 /* KXSettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KXSettingCell.m; sourceTree = "<group>"; };
 		04EA79A31D8FDAF9005E5425 /* PersonalSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PersonalSettingController.h; sourceTree = "<group>"; };
 		04EA79A41D8FDAF9005E5425 /* PersonalSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PersonalSettingController.m; sourceTree = "<group>"; };
+		04EA79AF1D90154F005E5425 /* LGFeedBackViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LGFeedBackViewController.h; sourceTree = "<group>"; };
+		04EA79B01D90154F005E5425 /* LGFeedBackViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LGFeedBackViewController.m; sourceTree = "<group>"; };
 		310B83201D8E7B0100A0F408 /* ZhiMaBaoBao.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZhiMaBaoBao.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310B83241D8E7B0100A0F408 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		310B83261D8E7B0100A0F408 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -311,6 +314,16 @@
 			name = "PersonalSetting(隐私设置)";
 			sourceTree = "<group>";
 		};
+		04EA79AE1D90154F005E5425 /* Feedback(意见反馈) */ = {
+			isa = PBXGroup;
+			children = (
+				04EA79AF1D90154F005E5425 /* LGFeedBackViewController.h */,
+				04EA79B01D90154F005E5425 /* LGFeedBackViewController.m */,
+			);
+			name = "Feedback(意见反馈)";
+			path = Feedback;
+			sourceTree = "<group>";
+		};
 		310B83171D8E7B0100A0F408 = {
 			isa = PBXGroup;
 			children = (
@@ -416,6 +429,7 @@
 		31B7C7001D8E96A100F1883A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				04EA79AE1D90154F005E5425 /* Feedback(意见反馈) */,
 				04EA79A21D8FDADC005E5425 /* PersonalSetting(隐私设置) */,
 				04EA79971D8FD51E005E5425 /* NewMessageSetting(新消息提醒) */,
 				04EA797B1D8FBCF3005E5425 /* BlackList(黑名单) */,
@@ -818,6 +832,7 @@
 				04EA79761D8FB95B005E5425 /* KXSettingController.m in Sources */,
 				04EA79681D8F861D005E5425 /* KXPersonalCenterCell.m in Sources */,
 				31B7C7201D8E96A100F1883A /* TimeLineController.m in Sources */,
+				04EA79B11D90154F005E5425 /* LGFeedBackViewController.m in Sources */,
 				04EA798E1D8FBCF3005E5425 /* LGResetPwdViewController.m in Sources */,
 				04EA79701D8F8F49005E5425 /* NSString+FontSize.m in Sources */,
 				04EA79711D8F8F49005E5425 /* NSString+MD5.m in Sources */,
